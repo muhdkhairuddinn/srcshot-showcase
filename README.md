@@ -35,9 +35,10 @@ Some jobs mean clicking through the same list of screens again and again. Auto m
 <p align="center"><img src="docs/auto.png" alt="SrcShot in Auto mode" width="300"></p>
 
 1. Press **Record clicks** and click through the screens in your usual order. SrcShot remembers each position.
-2. Press **START**, then the run key (F9 by default).
-3. It clicks the first spot, waits for the screen to stop changing, takes the screenshot, and moves on until the list ends. **Repeat** runs the whole list again and again.
-4. **Esc** stops it at any moment.
+2. Press the capture trigger (PrtScn) wherever you want a screenshot, for example once a deep menu has opened the screen you need. Clicks before that mark just open menus and are not screenshotted.
+3. Press **START**, then the run key (F9 by default).
+4. It replays the clicks and takes a full-screen screenshot at each mark, once the screen has stopped changing. **Repeat** runs the whole list again and again.
+5. **Esc** stops it at any moment.
 
 Instead of a fixed delay, it compares the screen every 100 ms and only shoots once the picture is still, so slow pages get time and fast pages do not wait. Manual mode still works exactly as before.
 
