@@ -2,7 +2,7 @@
 
 A tiny Windows tool that takes a screenshot, names it, numbers it and files it into the right folder. One key press, done. Built because I was doing that by hand a hundred times a day.
 
-<p align="center"><img src="docs/app.png" alt="SrcShot window" width="300"></p>
+<p align="center"><img src="docs/app.png" alt="SrcShot window" width="380"></p>
 
 > Showcase repo: notes and a screenshot only. The source code is private.
 
@@ -32,7 +32,7 @@ Some jobs need a pile of screenshots as proof, like test and commissioning repor
 
 Some jobs mean clicking through the same list of screens again and again. Auto mode does that part for me.
 
-<p align="center"><img src="docs/auto.png" alt="SrcShot in Auto mode" width="300"></p>
+<p align="center"><img src="docs/auto.png" alt="SrcShot in Auto mode" width="380"></p>
 
 1. Press **Record clicks** and click through the screens in your usual order. SrcShot remembers each position.
 2. Press the capture trigger (PrtScn) wherever you want a screenshot, for example once a deep menu has opened the screen you need. Clicks before that mark just open menus and are not screenshotted.
@@ -46,7 +46,7 @@ Instead of a fixed delay, it compares the screen every 100 ms and only shoots on
 
 Not sure what a button does? Press the **?** at the top, or hover over any control. A plain-language help window explains every one of them.
 
-<p align="center"><img src="docs/help.png" alt="SrcShot help window" width="260"></p>
+<p align="center"><img src="docs/help.png" alt="SrcShot help window" width="320"></p>
 
 ## Built with
 
