@@ -41,6 +41,12 @@ Some jobs mean clicking through the same list of screens again and again. Auto m
 
 Instead of a fixed delay, it compares the screen every 100 ms and only shoots once the picture is still, so slow pages get time and fast pages do not wait. Manual mode still works exactly as before.
 
+## Built-in help
+
+Not sure what a button does? Press the **?** at the top, or hover over any control. A plain-language help window explains every one of them.
+
+<p align="center"><img src="docs/help.png" alt="SrcShot help window" width="260"></p>
+
 ## Built with
 
 - C# and .NET 8, WPF desktop app (Windows x64)
