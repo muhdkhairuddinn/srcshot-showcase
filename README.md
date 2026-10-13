@@ -18,6 +18,7 @@ Some jobs need a pile of screenshots as proof, like test and commissioning repor
 - **Small files.** Saves high quality JPG (about 150 to 300 KB per full HD shot instead of 3 MB or more for PNG).
 - **Smart numbering.** Files become `Initial State_1.jpg`, `Initial State_2.jpg` and so on. It looks at what is already in the folder, carries on from the highest number, and never overwrites anything.
 - **Session folders.** Name the session and it creates the folder for you.
+- **Auto mode.** Record your clicks once, then replay them with a single key. SrcShot clicks, waits for the screen to settle, and takes the shot for you, over and over (see below).
 - **100% local.** No cloud, no accounts, no telemetry.
 
 ## How I use it
@@ -27,12 +28,25 @@ Some jobs need a pile of screenshots as proof, like test and commissioning repor
 3. Click through whatever you are documenting and tap the trigger each time.
 4. Press **Stop**, then open the folder. Everything is already named and numbered.
 
+## Auto mode
+
+Some jobs mean clicking through the same list of screens again and again. Auto mode does that part for me.
+
+![SrcShot in Auto mode](docs/auto.png)
+
+1. Press **Record clicks** and click through the screens in your usual order. SrcShot remembers each position.
+2. Press **START**, then the run key (F9 by default).
+3. It clicks the first spot, waits for the screen to stop changing, takes the screenshot, and moves on until the list ends. **Repeat** runs the whole list again and again.
+4. **Esc** stops it at any moment.
+
+Instead of a fixed delay, it compares the screen every 100 ms and only shoots once the picture is still, so slow pages get time and fast pages do not wait. Manual mode still works exactly as before.
+
 ## Built with
 
 - C# and .NET 8, WPF desktop app (Windows x64)
 - Win32 screen capture and low-level keyboard and mouse hooks (with a short debounce so one press is one shot)
 - Async JPG encoding, so the UI stays smooth
-- Unit and stress tests for the file naming, numbering and capture logic
+- Unit and stress tests for the file naming, numbering, capture and Auto mode replay logic
 
 ## Design notes
 
